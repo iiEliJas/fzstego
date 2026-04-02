@@ -1,7 +1,7 @@
 // Performance Testing for Adaptive Fuzzy Logic Steganography
 //
 
-#include "../src/steg_adaptive.h"
+#include "../src/fzstego.h"
 #include "../src/fuzzy.h"
 #include "../src/fuzzy_steg.h"
 

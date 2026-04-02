@@ -1,4 +1,4 @@
-#include "src/steg_adaptive.h"
+#include "src/fzstego.h"
 
 #include <stdio.h>
 #include <stdlib.h>

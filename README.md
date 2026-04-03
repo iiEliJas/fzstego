@@ -1,7 +1,7 @@
 # fzstego
 Adaptive fuzzy logic-based steganographic framework in C
 
-This project implements an **adaptive steganographic framework** in C, based on the research paper "Adaptive Fuzzy Logic-Based Steganographic Encryption Framework" by Joshi and Bhand (2026). It uses a **Mamdani-type fuzzy inference system** to dynamically determine the optimal embedding depth for every pixel based on local image characteristics.
+This project implements an **adaptive steganographic framework** in C, based on the research paper "Adaptive Fuzzy Logic-Based Steganographic Encryption Framework" by Joshi and Bhand (2026).
 
 ## References
 This framework implements the research from:
@@ -24,7 +24,7 @@ This framework implements the research from:
 ```bash
 # Clone the repository
 git clone https://github.com/iiEliJas/fzstego.git
-cd fuzzy-steganography
+cd fzstego
 
 # Build the demo and tests
 make

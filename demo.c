@@ -7,9 +7,7 @@
 
 
 int main(void) {
-    printf("\n\n-----------------------------------------------------\n");
-    printf("EXAMPLE 1: Embedding data\n");
-    printf("-----------------------------------------------------\n");
+     printf("\n\n---Embedding data---\n");
     
     unsigned char secret_message[] = "secret messageeeee!";
     size_t message_len = strlen((char*)secret_message);
@@ -34,19 +32,13 @@ int main(void) {
     }
     
 
+    /////////////////////////////////////////////////////////
 
 
-
-    printf("\n\n-----------------------------------------------------\n");
-    printf("EXAMPLE 2: Extracting data\n");
-    printf("-----------------------------------------------------\n");
+    printf("\n\n---Extracting data---\n");
     
     size_t recovered_len;
-    unsigned char *recovered_message = extract_data_adaptive(
-        "stego.bmp",           
-        &recovered_len,    
-        seed 
-    );
+    unsigned char *recovered_message = extract_data_adaptive("stego.bmp", &recovered_len, seed);
     
     if (recovered_message) {
         printf("Extraction successful!\n");

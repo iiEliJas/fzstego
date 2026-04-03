@@ -57,15 +57,6 @@ static int write_bmp_headers(FILE *file, const BMP_FILE_HEADER *fh, const BMP_IN
     return 0;
 }
 
-// Calculate bytes available
-static size_t get_pixel_data_size(const BMP_INFO_HEADER *ih) {
-    size_t width = (size_t)ih->width;
-    size_t height = (size_t)ih->height;
-    if (height < 0) height = -height;
-    size_t total_bytes = width * height * 3;
-    return total_bytes / BITS_PER_BYTE;
-}
-
 // Secure zero memory
 static void secure_zero(unsigned char *data, size_t len) {
     if (data) {

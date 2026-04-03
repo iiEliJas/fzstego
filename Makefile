@@ -7,10 +7,10 @@ TEST_DIR = test
 OBJ_DIR  = obj
 BIN_DIR  = bin
  
-CORE_SRC = $(SRC_DIR)/steg_adaptive.c $(SRC_DIR)/fuzzy.c $(SRC_DIR)/fuzzy_steg.c
+CORE_SRC = $(SRC_DIR)/fzstego.c $(SRC_DIR)/fuzzy.c $(SRC_DIR)/fuzzy_steg.c
 CORE_OBJ = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(CORE_SRC))
  
-HEADERS = $(SRC_DIR)/steg_adaptive.h $(SRC_DIR)/fuzzy.h $(SRC_DIR)/fuzzy_steg.h
+HEADERS = $(SRC_DIR)/fzstego.h $(SRC_DIR)/fuzzy.h $(SRC_DIR)/fuzzy_steg.h
 
 
 
